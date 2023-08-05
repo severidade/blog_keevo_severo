@@ -1,0 +1,32 @@
+# Ignorar arquivos e diretórios de configuração local
+wp-config.php
+wp-config-*.php
+
+# Ignorar o diretório de uploads
+wp-content/uploads/
+
+# Ignorar arquivos de log
+wp-content/debug.log
+
+# Ignorar diretórios e arquivos de cache
+wp-content/cache/
+wp-content/advanced-cache.php
+
+# Ignorar diretório de atualizações automáticas
+wp-content/upgrade/
+
+# Ignorar diretórios e arquivos temporários
+wp-content/temp/
+
+# Ignorar arquivos de backup
+*.bak
+*.backup
+*.zip
+
+# Ignorar o diretório Vendor (se estiver usando o Composer)
+vendor/
+
+# Ignorar arquivos de configuração de IDE
+.phpstorm.meta.php
+.idea/
+.vscode/
