@@ -4,3 +4,16 @@
   width: 100vw;
   min-height: 100vh;
 }
+.menu_area ul {
+  background-color: black;
+  display: flex;
+  height: 30px;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.menu_area ul a {
+  color: white;
+  text-transform: uppercase;
+}

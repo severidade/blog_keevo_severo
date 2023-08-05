@@ -6,3 +6,10 @@ function carrega_scripts(){
   wp_enqueue_script('template', get_template_directory_uri() . '/js/template.js', array(), null, true);
 }
 add_action('wp_enqueue_scripts', 'carrega_scripts');
+
+// Função para carregar os menus
+register_nav_menus(
+  array(
+    'meu_menu_principal' => 'Menu Principal'
+  )
+);

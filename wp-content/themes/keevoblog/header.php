@@ -13,8 +13,6 @@
       <div class="logo"><h1>Logo do Blog</h1> </div>
     </div>
     <nav class="menu_area">
-      <div class="menu">
-        Aqui entra a lista de itens do menu
-      </div>
+      <?php wp_nav_menu( array( 'theme_location' => 'meu_menu_principal' )); ?>
     </nav>
   </header>
