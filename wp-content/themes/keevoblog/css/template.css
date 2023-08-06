@@ -1,5 +1,5 @@
 .container_blog {
-  background: rgb(181, 181, 181);
+  background: rgb(255, 255, 255);
   max-width: 100%;
   width: 100vw;
   min-height: 100vh;
@@ -13,6 +13,11 @@
   align-items: center;
 }
 
+.post {
+  background: tomato;
+  padding: 20px;
+  margin-bottom: 20px;
+}
 .menu_area ul a {
   color: white;
   text-transform: uppercase;
