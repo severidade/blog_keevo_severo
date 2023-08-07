@@ -8,16 +8,24 @@
         <?php
           $args = array(
             'post_type' => 'post',
-            'posts_per_page' => 6,
+            'posts_per_page' => 3, // Lista os tres último posts
           );
           $destaque = new WP_Query($args);
 
           if ($destaque->have_posts()):
+            $count = 1;
             while ($destaque->have_posts()):
               $destaque->the_post();
-        ?>
-              <?php get_template_part('content', 'destaque'); ?>
-        <?php
+              
+              if ($count === 1) {
+                // Use um template diferente para o post mais recente (destaque principal)
+                get_template_part('content', 'destaque-principal');
+              } else {
+                // Use o template padrão para os outros posts
+                get_template_part('content', 'destaque');
+              }
+              
+              $count++;
             endwhile;
           endif;
         ?>

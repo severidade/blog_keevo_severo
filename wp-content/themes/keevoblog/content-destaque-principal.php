@@ -1,6 +1,6 @@
-<article class="noticia_destaque">
-  <div class="img_container_destaque">
-    <?php the_post_thumbnail('tumbnail'); ?>
+<article class="noticia_destaque_principal">
+  <div class="img_container_destaque_principal">
+    <?php the_post_thumbnail('large'); ?>
   </div>
   <div class="text_container_destaque_principal">
     <h1 class="post_title"><?php the_title(); ?></h1>
