@@ -14,11 +14,28 @@
 }
 
 .post {
-  background: tomato;
+  background: rgb(42, 229, 239);
   padding: 20px;
   margin-bottom: 20px;
 }
 .menu_area ul a {
   color: white;
   text-transform: uppercase;
+}
+
+.form {
+  background-color: gold;
+  height: 60px;
+  padding: 20px 0;
+  margin: 40px 0;
+}
+
+.hero {
+  background-color: gold;
+  height: 30vh;
+}
+
+.home_blog_posts {
+  height: 40vh;
+  background-color: teal;
 }
