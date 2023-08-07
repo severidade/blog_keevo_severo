@@ -7,9 +7,12 @@ function carrega_scripts(){
 }
 add_action('wp_enqueue_scripts', 'carrega_scripts');
 
-// Função para carregar os menus
+// Funçao para carregar os menus
 register_nav_menus(
   array(
     'meu_menu_principal' => 'Menu Principal'
   )
 );
+
+// Adiciona suporte ao tema
+add_theme_support('post-thumbnails');
