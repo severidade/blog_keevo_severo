@@ -26,19 +26,18 @@ get_header();
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  //DOMContentLoaded garante que o evento so seja disparado depois que o documento é carregado
   const form = document.getElementById('contactForm');
   const errorMessages = document.getElementById('errorMessages');
-  const successMessage = document.getElementById('successMessage');
+  const successModal = document.getElementById('successModal');
+  const closeModal = document.getElementById('closeModal');
   
   form.addEventListener('submit', function(event) {
-    event.preventDefault(); // Impede o envio padrão do formulário
+    event.preventDefault();
     
     const nome = document.getElementById('nome').value;
     const email = document.getElementById('email').value;
     const mensagem = document.getElementById('mensagem').value;
     errorMessages.innerHTML = '';
-    successMessage.innerHTML = '';
 
     let hasErrors = false;
 
@@ -58,8 +57,15 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     if (!hasErrors) {
-      successMessage.innerHTML = '<p>Mensagem enviada com sucesso!</p>';
+      successModal.style.display = 'block';
+      document.getElementById('nome').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('mensagem').value = '';
     }
+  });
+
+  closeModal.addEventListener('click', function() {
+    successModal.style.display = 'none';
   });
 });
 </script>
