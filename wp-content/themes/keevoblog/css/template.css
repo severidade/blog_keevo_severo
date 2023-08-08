@@ -25,14 +25,14 @@
 
 .form {
   background-color: gold;
-  height: 60px;
+  min-height: 50vh;
   padding: 20px 0;
   margin: 40px 0;
 }
 
 .hero {
   background-color: gold;
-  height: 30vh;
+  min-height: 30vh;
 }
 
 .home_blog_posts {
