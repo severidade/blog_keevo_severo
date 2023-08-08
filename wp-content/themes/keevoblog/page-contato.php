@@ -8,13 +8,13 @@ get_header();
     <section class="form">
       <form id="contactForm" method="POST">
         <label for="nome">Nome:</label>
-        <input type="text" name="nome" id="nome">
+        <input type="text" name="nome" id="nome" required>
         
         <label for="email">Email:</label>
-        <input type="email" name="email" id="email">
+        <input type="email" name="email" id="email" required>
         
         <label for="mensagem">Mensagem:</label>
-        <textarea name="mensagem" id="mensagem"></textarea>
+        <textarea name="mensagem" id="mensagem" required></textarea>
         
         <button type="submit" id="submitForm">Enviar</button>
       </form>
