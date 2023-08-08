@@ -10,7 +10,9 @@
 <div class="container_blog">
   <header>
     <div class="container_logo">
-      <div class="logo"><h1>Logo do Blog</h1> </div>
+    <a href="<?php echo esc_url(home_url('/')); ?>" class="logo">
+      <h1>Logo do Blog</h1>
+    </a>
     </div>
     <nav class="menu_area">
       <?php wp_nav_menu( array( 'theme_location' => 'meu_menu_principal' )); ?>
