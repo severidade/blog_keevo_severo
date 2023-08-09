@@ -241,6 +241,7 @@ body {
   font-weight: 300 !important;
   font-size: 29px;
   text-transform: uppercase;
+  transform: translateY(-16px);
 }
 
 .logo {
@@ -252,7 +253,7 @@ body {
   width: 140px;
   height: 55px;
   text-indent: -200px;
-  transform: translateY(-24px);
+  overflow: hidden;
 }
 
 #menu-control-open {
@@ -273,22 +274,52 @@ body {
 }
 
 #menu_area {
-  background: tomato;
+  background: linear-gradient(180deg, #270D36 50%, #000000 100%);
   transition: right ease-in-out 0.9s;
   position: absolute;
   z-index: 1;
   width: 100vw;
   max-width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   top: 0;
   right: -100vw;
   z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+#menu-menu-topo {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-size: 24px;
+  color: white;
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
 
+.current_page_item {
+  color: #FF9900;
+}
+
+#menu-control-close {
+  background-image: url(../img/icones/close_withe.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  text-transform: uppercase;
+  height: 30px;
+  width: 30px;
+  overflow: hidden;
+  text-indent: -100px;
+}
 
 #menu_area.active {
-  background: rgb(71, 114, 255);
   right: 0;
 }
 
@@ -319,11 +350,32 @@ nav {
     display: none;
   }
 
+  header {
+    background: linear-gradient(180deg, #270D36 50%, #000000 100%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 124px;
+    margin-bottom: 40px;
+  }
+
+  .container_logo {
+    background: none;
+  }
+
   #menu_area {
-    width: 20vw;
     position: initial;
-    margin-left: 0;
     transition: none;
+    /* background: tomato; */
+    height: 124px;
+    width: auto !important;
+  }
+
+  #menu-menu-topo {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    font-size: 24px;
   }
 }
 

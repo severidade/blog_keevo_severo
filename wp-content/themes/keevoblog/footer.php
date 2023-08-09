@@ -8,7 +8,7 @@
           </ul>
         </div>
         <div class="credito_footer">
-          <p>Desenvolvido por <a href="https://www.linkedin.com/in/severidade/" target="_blank">severo</a></p> <p>Repositório do projeto no <a href="https://github.com/severidade/blog_keevo_severo" target="_blank">GitHub</a></p>
+          <p>Desenvolvido por <a href="https://www.linkedin.com/in/severidade/" target="_blank">Severo</a></p> <p>Repositório do projeto no <a href="https://github.com/severidade/blog_keevo_severo" target="_blank">GitHub</a></p>
           </p></div>
       </footer>
       <?php wp_footer(); ?>
