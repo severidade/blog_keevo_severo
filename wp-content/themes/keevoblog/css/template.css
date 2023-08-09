@@ -12,15 +12,17 @@ body {
   max-width: 100%;
   width: 100vw;
   min-height: 100vh;
+  overflow: hidden;
+  position: relative;
 }
-.menu_area ul {
+/* .menu_area ul {
   background-color: black;
   display: flex;
   height: 30px;
   gap: 20px;
   justify-content: flex-start;
   align-items: center;
-}
+} */
 
 .post {
   background: rgb(42, 229, 239);
@@ -221,6 +223,65 @@ body {
 .credito_footer a { color: #FF9900; font-weight: 700;}
 
 /* Fim rodapé */
+
+/* Inicio Menu */
+#menu_area {
+  background: tomato;
+  transition: right ease-in-out 2s;
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
+  max-width: 100%;
+  min-height: 100vh;
+  top: 0;
+  right: -100vw;
+  z-index: 9;
+}
+
+#menu_area.active {
+  background: rgb(71, 114, 255);
+  right: 0;
+}
+
+#menu_area.desktop {
+  width: 20vw;
+  margin-left: 0;
+}
+
+nav {
+  background-color: white;
+}
+.container {
+  background-color: lime;
+  min-height: 120vh;
+}
+
+.boqueiaScroll {
+  overflow: hidden;
+}
+.container_menu{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+@media (min-width: 1000px) {
+  #menu-control-open, #menu-control-close {
+    display: none;
+  }
+
+  #menu_area {
+    width: 20vw;
+    position: initial;
+    margin-left: 0;
+    transition: none;
+  }
+}
+
+
+/* Fim menu */
+
+
 
 .form {
   background-color: gold;
