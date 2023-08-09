@@ -45,17 +45,14 @@ body {
   margin-bottom: 40px;
 }
 
-.destaque_principal .img_filter {
+.destaque_principal .img_filter,.destaque .img_filter {
   width: 100%;
-  height: 300px;
   position: relative;
+  background: #adadad7a url(../img/icones/image.png) no-repeat center/50px;
 }
 
-.destaque .img_filter {
-  width: 100%;
-  height: 150px;
-  position: relative;
-}
+.destaque_principal .img_filter { height: 300px; }
+.destaque .img_filter { height: 150px; }
 
 .img_filter::before {
   content: "";
@@ -148,7 +145,6 @@ body {
   font-size: 19px !important;
   font-weight: 700;
   padding: 0 10px 10px 10px ;
-  /* transform: translateY(-10px); */
 }
 
 .text_container_destaque p {
@@ -177,7 +173,7 @@ body {
   color: black;
   font-weight: 700;
 }
-/* fim destaque secundario */
+/* Fim Destaque Secundário */
 
 /* Rodapé */
 
@@ -189,6 +185,11 @@ body {
   align-items: flex-end;
 }
 
+.social_links ul {
+  display: flex;
+  gap: 20px;
+}
+
 .logo_rodape, .insta, .face, .youtube {
   background-repeat: no-repeat;
   background-position: center;
@@ -197,23 +198,10 @@ body {
   text-indent: -1000px;
 }
 
-.social_links ul {
-  display: flex;
-  gap: 20px;
-}
-
-.logo_rodape {
-  width: 57px;
-  height: 57px;
-}
-
-.insta, .face, .youtube {
-  display: block;
-  width: 40px;
-  height: 40px;
-}
-
+.logo_rodape { width: 57px; height: 57px; }
 .logo_rodape { background-image: url(../img/fav_icon.png);}
+
+.insta, .face, .youtube { display: block; width: 40px; height: 40px;}
 .insta{ background-image: url(../img/icones/instagram.png);}
 .face{ background-image: url(../img/icones/facebook.png);}
 .youtube{ background-image: url(../img/icones/youtube.png);}
@@ -230,10 +218,8 @@ body {
   margin-top: 30px;
 }
 
-.credito_footer a {
-  color: #FF9900;
-  font-weight: 700;
-}
+.credito_footer a { color: #FF9900; font-weight: 700;}
+
 /* Fim rodapé */
 
 .form {
