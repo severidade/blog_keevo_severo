@@ -1,13 +1,21 @@
-<article class="noticia_destaque_principal">
-  <div class="img_container_destaque_principal">
-    <a href="<?php the_permalink(); ?>">
+<article class="destaque_principal">
+  <div class="container_img">
+    <div class="img_filter">
+      <a href="<?php the_permalink(); ?>"></a>
       <?php the_post_thumbnail('large'); ?>
-    </a>
+    </div>
+    <div class="categoria_destaque_principal">
+      <?php the_category(' '); ?>
+    </div>
   </div>
   <div class="text_container_destaque_principal">
-    <h1 class="post_title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-    <p>por <samp><?php the_author_posts_link() ?></samp> em <span><?php the_category(' '); ?></span> Tags: <span><?php the_tags('Tags: ', ', '); ?></span> </p>
-    <p>Publicado em <?php echo get_the_date(); ?></p>
-    <p><?php the_excerpt(); ?></p>
+    <a href="<?php the_permalink(); ?>">
+      <h1 class="post_title"><?php the_title(); ?></h1>
+      <?php the_excerpt(); ?>
+    </a>
+    <div class="footer_post">
+      <p class="autor"><?php echo get_the_date(); ?> | Autor <?php the_author_posts_link() ?></p>
+      <p class="tags"><?php the_tags('Tags: ', ', '); ?></p>
+    </div>
   </div>
 </article>

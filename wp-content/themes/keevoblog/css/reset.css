@@ -40,3 +40,13 @@ nav,
 section {
   display: block;
 }
+
+a {
+  text-decoration: none; /* Remove o sublinhado padrão */
+  color: inherit; /* Mantém a cor do texto do elemento pai */
+}
+
+a:hover {
+  text-decoration: none; /* Remove o sublinhado no hover */
+  color: inherit; /* Mantém a cor do texto do elemento pai */
+}
