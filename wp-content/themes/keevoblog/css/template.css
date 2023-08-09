@@ -225,9 +225,56 @@ body {
 /* Fim rodapé */
 
 /* Inicio Menu */
+
+.container_logo {
+  height: 124px;
+  background: linear-gradient(90.07deg, #270D36 50%, #000000 100%);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 0 20px 20px 20px;
+  margin-bottom: 20px;
+}
+
+.logo_blog h1{
+  font-weight: 300 !important;
+  font-size: 29px;
+  text-transform: uppercase;
+}
+
+.logo {
+  background-image: url(../img/logo-keevo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  display: inline-block;
+  width: 140px;
+  height: 55px;
+  text-indent: -200px;
+  transform: translateY(-24px);
+}
+
+#menu-control-open {
+  height: 31px;
+  width: 31px;
+  overflow: hidden;
+  align-self: center;
+  background-image: url(../img/icones/hamburger.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 85% 85%;
+  transform: translateY(16px);
+  text-indent: -100px;
+}
+
+.blog {
+  font-weight: 700;
+}
+
 #menu_area {
   background: tomato;
-  transition: right ease-in-out 2s;
+  transition: right ease-in-out 0.9s;
   position: absolute;
   z-index: 1;
   width: 100vw;
@@ -237,6 +284,8 @@ body {
   right: -100vw;
   z-index: 9;
 }
+
+
 
 #menu_area.active {
   background: rgb(71, 114, 255);

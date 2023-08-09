@@ -10,8 +10,8 @@
 <div class="container_blog">
   <header>
     <div class="container_logo">
-      <a href="<?php echo esc_url(home_url('/')); ?>" class="logo">
-        <h1>Keevo | Blog</h1>
+      <a href="<?php echo esc_url(home_url('/')); ?>" class="logo_blog">
+        <h1> <strong class="logo">Keevo</strong> | <strong class="blog">Blog</strong></h1>
       </a>
       <div id="menu-control-open">hamburger</div>  
     </div>
