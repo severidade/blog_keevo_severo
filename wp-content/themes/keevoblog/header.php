@@ -8,7 +8,7 @@
 </head>
 <body <?php body_class(); ?>>
 <div class="container_blog">
-  <header>
+  <header class="header_principal">
     <div class="container_logo">
       <a href="<?php echo esc_url(home_url('/')); ?>" class="logo_blog">
         <h1> <strong class="logo">Keevo</strong> | <strong class="blog">Blog</strong></h1>
