@@ -503,7 +503,7 @@ iframe {
     background: linear-gradient(180deg, #270D36 50%, #000000 100%);
     display: flex;
     justify-content: space-between;
-    padding: 0 15vw;
+    padding: 0 22vw;
     height: 124px;
     margin-bottom: 40px;
   }
@@ -533,11 +533,14 @@ iframe {
 
   .home_blog_posts, .blog_posts, .social_links, .post {
     padding: 0;
-    width: 70vw;
+    width: 55vw;
   }
+
+  .destaque_principal .img_filter { height: 20vw; }
+  .destaque .img_filter { height: 15vw; }
 
   iframe {
     width: 100% !important;
-    height: calc(9 / 16 * 70vw);
+    height: calc(9 / 16 * 55vw);
   }
 }
