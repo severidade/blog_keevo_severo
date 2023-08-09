@@ -35,7 +35,7 @@ body {
 }
 
 /* Página Home */
-.home_blog_posts {
+.home_blog_posts, .blog_posts {
   min-height: 40vh;
   width: 100%;
   padding: 0 20px;
@@ -269,8 +269,11 @@ body {
   text-indent: -100px;
 }
 
-.blog {
-  font-weight: 700;
+.blog_posts h2 {
+  font-weight: 300;
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 #menu_area {
