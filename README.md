@@ -19,6 +19,8 @@ onde foi possível identificar o número de telas.
 * Tela Blog Single - Post do Blog.
 * Tela Contato - Formulário de contato.
 
+No [Figma](https://www.figma.com/community/file/1271273460538223404/keevo-home-Blog) foi feita a tela home e os módulos dela retirados serviram pra o desenvolvimento das outras telas
+
 Desenvolvi o tema localmente usando o XAMPP na versão 8.2.4-0 para Linux. O deploy foi feito no Hostgator
 ### 
 
