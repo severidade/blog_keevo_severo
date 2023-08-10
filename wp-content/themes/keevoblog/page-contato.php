@@ -4,7 +4,7 @@ get_header();
 
 <main>
   <section class="container_contato">
-    <h2>Esta é a página de contato</h2>
+    <h2>contato</h2>
     <section class="form">
       <form id="contactForm" method="POST">
         <label for="nome">Nome:</label>

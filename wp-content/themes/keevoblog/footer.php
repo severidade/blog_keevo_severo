@@ -16,7 +16,7 @@
     
     <div id="successModal" class="modal">
       <div class="modal-content">
-        <span class="close" id="closeModal">&times;</span>
+        <span class="close" id="closeModal"></span>
         <p>Mensagem enviada com sucesso!</p>
       </div>
     </div>
